@@ -1,0 +1,43 @@
+.wrapper {
+  position: fixed;
+  top: 2.5rem;
+  right: 5rem;
+  z-index: 200;
+}
+
+.toggle {
+  position: relative;
+  border-radius: 50%;
+  height: 32px;
+  aspect-ratio: 1 / 1;
+  padding: 0em;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    right: 3rem;
+  }
+
+  .toggle {
+    height: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    display: flex;
+    top: unset;
+    left: unset;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .toggle {
+    height: fit-content;
+    padding: 0.5rem;
+    background-color: #fff;
+  }
+  .toggle svg {
+    height: 28px;
+  }
+}

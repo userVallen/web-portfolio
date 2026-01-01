@@ -1,0 +1,51 @@
+.sectionContainer {
+  display: flex;
+  width: 100%;
+}
+
+.textContainer {
+  flex: 1;
+}
+
+.formContainer {
+  flex: 1;
+}
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.formContainer input,
+.formContainer textarea {
+  border: 2px solid var(--button-bg-color);
+}
+.formContainer svg {
+  width: 16px;
+  fill: #fff;
+}
+.formContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #121212;
+  gap: 0.25rem;
+}
+/* enable animations *only* on desktop view */
+@media (hover: hover) and (pointer: fine) {
+  .formContainer svg {
+    width: 0;
+  }
+}
+
+.form-control:focus,
+.form-control:focus-visible {
+  border-color: var(--button-bg-color) !important;
+  outline-color: var(--button-bg-color) !important;
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+  }
+}

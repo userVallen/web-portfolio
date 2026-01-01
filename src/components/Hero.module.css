@@ -1,0 +1,75 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  min-width: 0;
+}
+.sectionContainer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionContainer svg {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.svgContainer {
+  animation: slideLeft 1s ease forwards;
+}
+
+.textContainer {
+  width: 40%;
+}
+.textContainer h1,
+.textContainer p {
+  animation: slideRight 1s ease forwards;
+}
+
+.emphasize {
+  color: var(--button-bg-color);
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .textContainer {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionContainer {
+    row-gap: 1rem;
+  }
+}
