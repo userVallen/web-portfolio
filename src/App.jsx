@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import ThemeToggle from "./components/ThemeToggle";
@@ -38,40 +39,48 @@ function App() {
   }, []);
 
   return (
-    <div id="app-sections">
-      <Navbar
-        aboutRef={aboutRef}
-        techStackRef={techStackRef}
-        projectsRef={projectsRef}
-        mobileView={mobileView}
-      />
-      <ThemeToggle theme={theme} setTheme={setTheme} mobileView={mobileView} />
-      <Contacts mobileView={mobileView} />
+    <>
+      <div id="app-sections">
+        <Navbar
+          aboutRef={aboutRef}
+          techStackRef={techStackRef}
+          projectsRef={projectsRef}
+          mobileView={mobileView}
+        />
+        <ThemeToggle
+          theme={theme}
+          setTheme={setTheme}
+          mobileView={mobileView}
+        />
+        <Contacts mobileView={mobileView} />
 
-      <div className="content">
-        <section>
-          <Hero />
-        </section>
+        <div className="content">
+          <section>
+            <Hero />
+          </section>
 
-        <section ref={aboutRef} id="About">
-          <About />
-        </section>
+          <section ref={aboutRef} id="About">
+            <About />
+          </section>
 
-        <section ref={techStackRef} id="Skills">
-          <TechStack />
-        </section>
+          <section ref={techStackRef} id="Skills">
+            <TechStack />
+          </section>
 
-        <section ref={projectsRef} id="Projects">
-          <Projects mobileView={mobileView} />
-        </section>
+          <section ref={projectsRef} id="Projects">
+            <Projects mobileView={mobileView} />
+          </section>
 
-        <section ref={contactRef} id="Contact" style={{ minHeight: "unset" }}>
-          <ContactMe mobileView={mobileView} />
-        </section>
+          <section ref={contactRef} id="Contact" style={{ minHeight: "unset" }}>
+            <ContactMe mobileView={mobileView} />
+          </section>
 
-        <Footer />
+          <Footer />
+        </div>
       </div>
-    </div>
+
+      <Analytics />
+    </>
   );
 }
 
