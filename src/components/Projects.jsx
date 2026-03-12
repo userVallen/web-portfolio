@@ -6,6 +6,7 @@ import kamoosThumbnail from "../assets/kamoos.png";
 import bloggoThumbnail from "../assets/bloggo.png";
 import daylyThumbnail from "../assets/dayly.png";
 import otpThumbnail from "../assets/otp.png";
+import bookTrackerThumbnail from "../assets/book-tracker.png";
 
 gsap.registerPlugin(ScrollTrigger);
 import Card from "./Card";
@@ -43,6 +44,13 @@ export default function Projects({ mobileView }) {
       skills: ["Python", "Flask", "MongoDB"],
       desc: "A Python-based OTP generation and verification system designed for simple and securely encrypted authentication.",
       repoLink: "https://github.com/userVallen/OpenAuth-user-server",
+    },
+    {
+      thumbnail: bookTrackerThumbnail,
+      title: "Book Tracker",
+      skills: ["Node", "Express", "PostgreSQL", "JavaScript", "EJS"],
+      desc: "A server-rendered book tracking web app that allows users to add, edit, and delete books with data stored in a PostgreSQL database.",
+      repoLink: "https://github.com/userVallen/Book-Tracker",
     },
   ];
 
@@ -84,7 +92,7 @@ export default function Projects({ mobileView }) {
         });
       }
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   );
 
   return (
