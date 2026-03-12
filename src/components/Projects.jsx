@@ -6,7 +6,7 @@ import kamoosThumbnail from "../assets/kamoos.png";
 import bloggoThumbnail from "../assets/bloggo.png";
 import daylyThumbnail from "../assets/dayly.png";
 import otpThumbnail from "../assets/otp.png";
-import bookTrackerThumbnail from "../assets/bookTracker.png";
+import bookTrackerThumbnail from "../assets/book-tracker.png";
 
 gsap.registerPlugin(ScrollTrigger);
 import Card from "./Card";
