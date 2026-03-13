@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 function App() {
   const MOBILE_BREAKPOINT = 576;
   const [mobileView, setMobileView] = useState(
-    window.innerWidth <= MOBILE_BREAKPOINT
+    window.innerWidth <= MOBILE_BREAKPOINT,
   );
   const [theme, setTheme] = useState("light");
   const aboutRef = useRef(null);
@@ -52,7 +52,7 @@ function App() {
           setTheme={setTheme}
           mobileView={mobileView}
         />
-        <Contacts mobileView={mobileView} />
+        <Contacts theme={theme} mobileView={mobileView} />
 
         <div className="content">
           <section>

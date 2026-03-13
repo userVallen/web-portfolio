@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import styles from "./Contacts.module.css";
 
-export default function Contacts({ mobileView }) {
+export default function Contacts({ theme, mobileView }) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef(null);
   const linkedInRef = useRef(null);
@@ -15,6 +15,15 @@ export default function Contacts({ mobileView }) {
       hideContacts();
     }
   }, [mobileView]);
+
+  useEffect(() => {
+    gsap.to(buttonRef.current, {
+      fill: theme === "light" ? "#000" : "#fff",
+      backgroundColor: theme === "light" ? "#fff" : "#000",
+      duration: 0.3,
+      ease: "expo.out",
+    });
+  }, [theme]);
 
   const showContacts = () => {
     if (!linkedInRef.current || !instagramRef.current || !githubRef.current) {
@@ -35,7 +44,7 @@ export default function Contacts({ mobileView }) {
           duration: 0.4,
           ease: "back.out",
         },
-        "<"
+        "<",
       )
       .to(
         githubRef.current,
@@ -44,7 +53,7 @@ export default function Contacts({ mobileView }) {
           duration: 0.6,
           ease: "back.out",
         },
-        "<"
+        "<",
       );
   };
 
