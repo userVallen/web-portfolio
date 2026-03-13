@@ -24,10 +24,12 @@ export default function Navbar({
     });
   };
 
+  // * Hide mobile nav on desktop view
   useEffect(() => {
     if (!mobileView) setOpen(false);
   }, [mobileView]);
 
+  // * Toggle mobile nav height based on open state
   useEffect(() => {
     if (!mobileNavRef.current) return;
 

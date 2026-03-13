@@ -132,7 +132,7 @@ export default function TechStack() {
         // markers: true,
       });
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   );
 
   return (

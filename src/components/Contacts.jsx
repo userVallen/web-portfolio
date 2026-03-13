@@ -9,6 +9,7 @@ export default function Contacts({ theme, mobileView }) {
   const instagramRef = useRef(null);
   const githubRef = useRef(null);
 
+  // * Hide contacts on mobile view
   useEffect(() => {
     if (!mobileView) {
       setOpen(false);
@@ -16,6 +17,7 @@ export default function Contacts({ theme, mobileView }) {
     }
   }, [mobileView]);
 
+  // * Toggle button and icon color based on theme
   useEffect(() => {
     gsap.to(buttonRef.current, {
       fill: theme === "light" ? "#000" : "#fff",

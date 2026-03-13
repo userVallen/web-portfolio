@@ -19,6 +19,7 @@ export default function ThemeToggle({ theme, setTheme, mobileView }) {
     gsap.to(el, { scale: 1, duration: 0.05, ease: "none" });
   };
 
+  // * Toggle icon based on theme
   useEffect(() => {
     gsap.to(moonRef.current, {
       morphSVG: theme === "light" ? moonRef.current : sunRef.current,
@@ -28,6 +29,7 @@ export default function ThemeToggle({ theme, setTheme, mobileView }) {
     });
   }, [theme]);
 
+  // * Toggle background color based on theme
   useEffect(() => {
     let bgColor = "";
     if (!mobileView) bgColor = "transparent";
