@@ -35,10 +35,10 @@ export default function About() {
           transform: "scaleX(1)",
           duration: 0.6,
           ease: "power2.out",
-        }
+        },
       );
     },
-    { scope: parRef }
+    { scope: parRef },
   );
 
   return (
@@ -49,10 +49,7 @@ export default function About() {
       <div className={styles.container}>
         <div className={styles.paragraphContainer} ref={parRef}>
           <p style={{ zIndex: "100" }}>
-            I’m a final-year Mobile System Engineering student at Dankook
-            University expecting to graduate by the beginning of 2026. Aside
-            from providing helpful services, I’m deeply passionate about
-            creating{" "}
+            I'm a software engineer with a passion for creating{" "}
             <span className="highlight">
               <span className="highlight-bg" />
               <span className="highlight-text">modern interfaces</span>
@@ -67,7 +64,7 @@ export default function About() {
           </p>
           <p>
             Outside of coding, I often find myself inspired by visually pleasing
-            art and designs, which I oftentimes translate into my own projects,
+            art and designs, which I often translate into my own projects,
             experimenting with styles, frameworks, and languages to better
             understand their strengths.
           </p>

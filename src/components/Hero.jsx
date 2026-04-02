@@ -34,7 +34,7 @@ export default function Hero() {
           onEnter: () => tl.restart(),
           onEnterBack: () => tl.restart(),
           onLeave: () => tl.reverse(),
-        })
+        }),
       );
 
       gsap.to(textRef.current, {
@@ -61,7 +61,7 @@ export default function Hero() {
         ease: "none",
       });
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   );
 
   return (
@@ -71,7 +71,7 @@ export default function Hero() {
           Hi, I'm <span className={styles.emphasize}>Vallen</span>!
         </h1>
         <p className="w-100 my-4">
-          A web developer focused on creating clean and thoughtful{" "}
+          A software engineer focused on creating clean and thoughtful{" "}
           <span className="highlight">
             <span className="highlight-bg" />
             <span className="highlight-text">interfaces</span>
