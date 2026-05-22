@@ -6,7 +6,7 @@ import styles from "./HeroAnimation.module.css";
 
 gsap.registerPlugin(useGSAP, MorphSVGPlugin);
 
-export default function ({ svgRef }) {
+export default function HeroAnimation({ svgRef }) {
   const walkerRef = useRef(null);
   const morphInitRef1 = useRef(null);
   const morphInitRef2 = useRef(null);
