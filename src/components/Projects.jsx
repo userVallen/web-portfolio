@@ -2,11 +2,13 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import kamoosThumbnail from "../assets/kamoos.png";
-import bloggoThumbnail from "../assets/bloggo.png";
-import daylyThumbnail from "../assets/dayly.png";
-import otpThumbnail from "../assets/otp.png";
-import bookTrackerThumbnail from "../assets/book-tracker.png";
+import kamoosThumbnail from "../assets/thumbnails/kamoos.png";
+import bloggoThumbnail from "../assets/thumbnails/bloggo.png";
+import daylyThumbnail from "../assets/thumbnails/dayly.png";
+import otpThumbnail from "../assets/thumbnails/otp.png";
+import bookTrackerThumbnail from "../assets/thumbnails/book-tracker.png";
+import soeunMovieDonationThumbnail from "../assets/thumbnails/soeun-movie-donation.png";
+import unibridgeThumbnail from "../assets/thumbnails/unibridge.png";
 
 gsap.registerPlugin(ScrollTrigger);
 import Card from "./Card";
@@ -14,6 +16,21 @@ import styles from "./Projects.module.css";
 
 export default function Projects({ mobileView }) {
   const projects = [
+    {
+      thumbnail: soeunMovieDonationThumbnail,
+      title: "SOEUN Movie Donation",
+      skills: ["Next.js", "TypeScript", "Supabase"],
+      desc: "A donation platform for a graduation film project featuring supporter messages, pixel avatars, admin verification workflows, and responsive game-style interactions.",
+      demoLink: "https://soeun-movie-donation.vercel.app/",
+      repoLink: "https://github.com/zorrmamoo/SOEUN-Movie-Donation",
+    },
+    {
+      thumbnail: unibridgeThumbnail,
+      title: "UniBridge",
+      skills: ["React", "JavaScript"],
+      desc: "A university platform designed to help local and international students discover events, stay updated through announcements, and build connections.",
+      repoLink: "https://github.com/userVallen/UniBridge",
+    },
     {
       thumbnail: kamoosThumbnail,
       title: "kamoos",
