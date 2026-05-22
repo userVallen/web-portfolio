@@ -7,7 +7,7 @@ This project is my first web portfolio, [vallennathaniel.com](https://www.vallen
     </a>
 <p>
 
-![demo image](src/assets/demo.png)
+![demo image](src/assets/thumbnails/demo.png)
 
 ## Features
 - Responsive design
