@@ -7,7 +7,7 @@ import bloggoThumbnail from "../assets/thumbnails/bloggo.png";
 import daylyThumbnail from "../assets/thumbnails/dayly.png";
 import otpThumbnail from "../assets/thumbnails/otp.png";
 import bookTrackerThumbnail from "../assets/thumbnails/book-tracker.png";
-import soeunMovieDonationThumbnail from "../assets/thumbnails/soeun-movie-donation.png";
+import happilyNeverAfterThumbnail from "../assets/thumbnails/happily-never-after.png";
 import unibridgeThumbnail from "../assets/thumbnails/unibridge.png";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,12 +17,19 @@ import styles from "./Projects.module.css";
 export default function Projects({ mobileView }) {
   const projects = [
     {
-      thumbnail: soeunMovieDonationThumbnail,
-      title: "SOEUN Movie Donation",
-      skills: ["Next.js", "TypeScript", "Supabase"],
-      desc: "A donation platform for a graduation film project featuring supporter messages, pixel avatars, admin verification workflows, and responsive game-style interactions.",
-      demoLink: "https://soeun-movie-donation.vercel.app/",
-      repoLink: "https://github.com/zorrmamoo/SOEUN-Movie-Donation",
+      thumbnail: happilyNeverAfterThumbnail,
+      title: "Happily Never After Movie Donation",
+      skills: [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "Zod",
+        "Tailwind",
+        "Motion",
+      ],
+      desc: "End-to-end type-safe donation platform for a graduation film, complete with verified admin workflows and polished micro-interactions.",
+      demoLink: "https://happily-never-after.vercel.app/",
+      repoLink: "https://github.com/userVallen/happily-never-after",
     },
     {
       thumbnail: unibridgeThumbnail,

@@ -49,6 +49,8 @@
 .thumbnail {
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   border-radius: 12px;
   border: #919191 3px solid;
   align-self: center;
