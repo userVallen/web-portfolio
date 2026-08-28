@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  1. We use viewBox="-2 -7.5 28 28" to create a perfect 1:1 canvas (28x28 units).
+  2. The negative X and Y values (-2 and -7.5) shift the coordinates to center the path.
+-->
+<svg id="svg12411545518" width="200" height="200" viewBox="-2 -10 28 28" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <!-- Background rect inherits the square 1:1 viewbox bounds -->
+  <rect x="-2" y="-10" width="100%" height="100%" rx="3" fill="black" />
+  <path class="st0" d="M9.1,0l-4.7,9H0L3.7,2c.6-1.1,2-2,3.2-2h2.2ZM19.7,2.2c0-1.2,1-2.2,2.2-2.2s2.2,1,2.2,2.2-1,2.2-2.2,2.2-2.2-1-2.2-2.2ZM9.9,0h4.3l-4.7,9h-4.3L9.9,0ZM15,0h4.3l-3.7,7c-.6,1.1-2,2-3.2,2h-2.2L15,0Z"/>
+</svg>

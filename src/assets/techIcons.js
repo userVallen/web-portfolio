@@ -16,6 +16,11 @@ import cpp from "./icons/cpp.svg";
 import python from "./icons/python.svg";
 import postgresql from "./icons/postgresql.svg";
 import aws from "./icons/aws.svg";
+import nextjs from "./icons/nextjs.svg";
+import go from "./icons/go.svg";
+import supabase from "./icons/supabase.svg";
+import tailwind from "./icons/tailwind.svg";
+import motion from "./icons/motion.svg";
 
 export const techIcons = {
   react,
@@ -36,4 +41,9 @@ export const techIcons = {
   python,
   postgresql,
   aws,
+  nextjs,
+  go,
+  supabase,
+  tailwind,
+  motion,
 };

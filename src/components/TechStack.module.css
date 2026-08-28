@@ -25,7 +25,10 @@
 
 .techTrack a {
   position: relative;
-  display: inline-block;
+  display: flex;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
 }
 .techTrack a::before {
   content: attr(label);
@@ -41,7 +44,9 @@
   white-space: nowrap;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 .techTrack a:hover::before {
   opacity: 1;

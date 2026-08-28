@@ -15,6 +15,11 @@ export default function TechStack() {
       label: "React.js",
     },
     {
+      link: "https://nextjs.org/",
+      icon: techIcons.nextjs,
+      label: "Next.js",
+    },
+    {
       link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       icon: techIcons.javascript,
       label: "JavaScript",
@@ -33,6 +38,16 @@ export default function TechStack() {
       link: "https://getbootstrap.com/",
       icon: techIcons.bootstrap,
       label: "Bootstrap",
+    },
+    {
+      link: "https://tailwindcss.com/",
+      icon: techIcons.tailwind,
+      label: "Tailwind CSS",
+    },
+    {
+      link: "https://motion.dev/",
+      icon: techIcons.motion,
+      label: "Motion",
     },
     {
       link: "https://gsap.com/",
@@ -71,6 +86,11 @@ export default function TechStack() {
       label: "GitHub",
     },
     {
+      link: "https://go.dev/",
+      icon: techIcons.go,
+      label: "Go",
+    },
+    {
       link: "https://www.c-language.org/",
       icon: techIcons.c,
       label: "C",
@@ -80,6 +100,11 @@ export default function TechStack() {
       link: "https://www.python.org/",
       icon: techIcons.python,
       label: "Python",
+    },
+    {
+      link: "https://supabase.com/",
+      icon: techIcons.supabase,
+      label: "Supabase",
     },
     {
       link: "https://www.postgresql.org/",
