@@ -2,13 +2,14 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import kamoosThumbnail from "../assets/thumbnails/kamoos.png";
-import bloggoThumbnail from "../assets/thumbnails/bloggo.png";
-import daylyThumbnail from "../assets/thumbnails/dayly.png";
-import otpThumbnail from "../assets/thumbnails/otp.png";
-import bookTrackerThumbnail from "../assets/thumbnails/book-tracker.png";
-import happilyNeverAfterThumbnail from "../assets/thumbnails/happily-never-after.png";
-import unibridgeThumbnail from "../assets/thumbnails/unibridge.png";
+import kamoosThumbnail from "../assets/thumbnails/kamoos.webp";
+import bloggoThumbnail from "../assets/thumbnails/bloggo.webp";
+import daylyThumbnail from "../assets/thumbnails/dayly.webp";
+import otpThumbnail from "../assets/thumbnails/otp.webp";
+import bookTrackerThumbnail from "../assets/thumbnails/book-tracker.webp";
+import happilyNeverAfterThumbnail from "../assets/thumbnails/happily-never-after.webp";
+import unibridgeThumbnail from "../assets/thumbnails/unibridge.webp";
+import anchordThumbnail from "../assets/thumbnails/anchord.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 import Card from "./Card";
@@ -30,6 +31,23 @@ export default function Projects({ mobileView }) {
       desc: "End-to-end type-safe donation platform for a graduation film, complete with verified admin workflows and polished micro-interactions.",
       demoLink: "https://happily-never-after.vercel.app/",
       repoLink: "https://github.com/userVallen/happily-never-after",
+    },
+    {
+      thumbnail: anchordThumbnail,
+      title: "Anchord",
+      skills: [
+        "React",
+        "Typescript",
+        "Tailwind",
+        "React Hook Form",
+        "Zod",
+        "Go",
+        "Huma",
+        "Gemini API",
+        "PostgreSQL",
+      ],
+      desc: "A full-stack web application for churches to efficiently manage songs and service schedules paired with integrated AI embeddings for automated song recommendations.",
+      demoLink: "https://theanchord.com/",
     },
     {
       thumbnail: unibridgeThumbnail,
