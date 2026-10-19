@@ -1,5 +1,6 @@
 import react from "./icons/react.svg";
 import javascript from "./icons/javascript.svg";
+import typescript from "./icons/typescript.svg";
 import html from "./icons/html.svg";
 import css from "./icons/css.svg";
 import bootstrap from "./icons/bootstrap.svg";
@@ -25,6 +26,7 @@ import motion from "./icons/motion.svg";
 export const techIcons = {
   react,
   javascript,
+  typescript,
   html,
   css,
   bootstrap,

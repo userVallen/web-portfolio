@@ -25,6 +25,11 @@ export default function TechStack() {
       label: "JavaScript",
     },
     {
+      link: "https://www.typescriptlang.org/",
+      icon: techIcons.typescript,
+      label: "TypeScript",
+    },
+    {
       link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       icon: techIcons.html,
       label: "HTML",
